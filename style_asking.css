@@ -1,0 +1,129 @@
+*{
+	padding:0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Rubik', sans-serif;
+	list-style: none;
+	text-decoration: none;
+}
+
+header{
+	position: fixed;
+	right: 0;
+	top:0;
+	z-index:1000;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 33px 9%;
+	background: transparent;
+	
+}
+body{
+	width:100%;
+	min-height: 400hv;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.asking
+{
+	height: 100%;
+	width: 100%;
+	min-height: 100vh;
+	background: linear-gradient(245.59deg,#419fe8 0%, #155b81 28.53%, #0b2e67 75.53%);
+	position: relative;
+	display: grid;
+	align-items: center;
+	gap: 2rem;
+	
+}
+h1{
+    text-align: center;
+	font-size: 18px;
+	line-height: 1;
+	color:white;
+	font-family: sans-serif;
+	justify-content: center;
+	padding-top:90px;
+	padding-bottom:5px;
+    /*margin-top: 80px;
+    margin-bottom: 10px;
+    margin-left:200px;
+    margin-right:200px;*/
+    
+
+}
+.test-boxes{
+    display: flex;
+    flex-wrap: wrap;
+	position: relative;
+    column-gap: 25px;
+    row-gap: 25px;
+    gap:1 rem;
+    justify-content: space-around ;
+	margin-bottom: 25px;
+  /*  flex: 1 1 calc((100% / 3) - 1rem);*/
+}
+.choose{
+   
+   /* display: inline-block;*/
+	color:white;
+	background:none;
+  /*  border: 10px solid transparent;
+    padding: 10px;
+	line-height: 1.4;*/
+    border-radius: 100px; /* Радиус скругления */
+    border: 0px solid#48a1d0; /* Параметры рамки */
+   	font-size: 14px;
+	font-weight: 500;
+	/*border-radius: 50%;*/
+}
+
+img{
+    width:158px ;
+    height:158px;
+    border-radius: 100px; /* Радиус скругления */
+   /* border: 1px solid#48a1d0; /* Параметры рамки */
+}
+.choose :visited{
+    border: 3px solid#155b81;  
+}
+.choose :focus{
+    border: 3px solid#155b81;  
+}
+
+.choose img:hover{
+    border: 3px solid#ffffff;  
+	transform: scale(1.2);
+	transition: .53s; 
+	box-shadow: 0 0 10px #04193a;
+}
+.choose{
+    display: inline-block; /* Строчно-блочный элемент */
+    position: relative; /* Относительное позиционирование */
+   }
+.choose:hover::after{
+	content: attr(data-title); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0; right: 0; bottom: 70px; /* Положение подсказки */
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background: #04193a98; /* Полупрозрачный цвет фона */
+    color: #fff; /* Цвет текста */
+    text-align: center; /* Выравнивание текста по центру */
+    font-family: Arial, sans-serif; /* Гарнитура шрифта */
+    font-size: 16px; /* Размер текста подсказки */
+    padding: 5px 10px; /* Поля */
+    border-radius: 50px ; /* Параметры рамки */
+
+}
+.choose img:active{
+    border: 3px solid#155b81;  
+	transition: .3s; 
+}
+.choose :link {
+    border: 10px solid#48a1d0;
+}
+
+

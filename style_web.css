@@ -1,0 +1,268 @@
+*{
+	padding:0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Rubik', sans-serif;
+	list-style: none;
+	text-decoration: none;
+}
+
+header{
+	position: fixed;
+	right: 0;
+	top:0;
+	z-index:1000;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 33px 9%;
+	background: transparent;
+}
+body{
+	width:100%;
+	min-height: 100hv;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+#login{
+	display: block;
+}
+
+.info img{
+	width: 500px;;
+	height: auto;
+}
+.logo{
+	font-size: 30px;
+	font-weight: 700;
+	color:rgb(255, 255, 255);
+}
+.navlist{
+	display: flex;
+	justify-content: flex;
+}
+.navlist a{
+	color:white;
+	margin-left:150px;
+	margin-top:300px;
+	font-size:17px;
+	font-weight: 1000;
+	border-bottom: 2px solid transparent;
+	transition: all .45s ease;
+}
+.navlist a:hover{
+	transition: 0.35s linear;
+	background: #48a1d0;
+	border: 15px;
+	height: 70vh;
+	width: 100%;
+	border-radius: 20px;
+	padding: 3px;
+	/*margin:150px auto;*/
+}
+#login{
+	display: flex;
+}
+.Login-popup{
+	display: inline-block;
+	color:white;
+	background: #48a1d0;
+	border: 1px solid transparent;
+	padding: 9px 10px;
+	line-height: 1.4;
+	font-size: 14px;
+	font-weight: 500;
+	
+	border-radius: 30px;
+	text-transform: uppercase;
+	transition: all .55s ease;
+
+}
+.Login-popup:hover{
+	transform:scale(1.1);
+	background: #fff;
+	border:2px solid #fff;
+	color:#48a1d0;
+}
+
+#menu-icon{
+	color: white;
+	font-size: 30px;
+	z-index:10001;
+	cursor: pointer;
+}
+.info
+{
+	height: 100%;
+	width: 100%;
+	min-height: 100vh;
+	background: linear-gradient(245.59deg,#419fe8 0%, #155b81 28.53%, #0b2e67 75.53%);
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 2rem;
+
+	
+}
+section{
+	padding: 0 19%;
+
+}
+.info-text h5{
+	font-size: 14px;
+	font-weight: 400;
+	color:white;
+	font-family:  sans-serif;
+	margin-bottom: 30px;
+}
+.info-text h1{
+	font-size: 25px;
+	line-height: 1;
+	color:white;
+	font-family: 'Rubik';
+	margin:0 0 30px;
+
+}
+ p, h2{
+	line-height: 1;
+	font-weight: 600;
+	color:white;
+	margin-bottom:20px;
+	
+}
+ h2{
+	font-size:30px;
+	font-family: 'Rubik';
+	
+}
+ p{
+	font-size: 16px;
+	font-family: sans-serif;
+
+}
+.info-text a{
+	display: inline-block;
+	color:white;
+	background: #48a1d0;
+	border: 1px solid transparent;
+	padding: 9px 10px;
+	line-height: 1.4;
+	font-size: 14px;
+	font-weight: 500;
+	
+	border-radius: 30px;
+	text-transform: uppercase;
+	transition: all .55s ease;
+
+}
+
+.info-text a:hover{
+	background: transparent;
+	transform:scale(1.1);
+	border: 1px solid white;
+	/*transform: translateX(8px);*/
+}
+
+.scroll-down{
+	position:absolute;
+	bottom:6%;
+	right: 9%;
+}
+.scroll-down i{
+	display:block;
+	padding: 5px;
+	font-size: 25px;
+	color:white;
+	background:#52bff9;
+	border-radius: 30px;
+	transition: all .50s ease;
+}
+
+
+@media (max-width: 1535px){
+	header{
+		padding: 15px 3%;
+		transition: .2s;
+	}
+	.scroll-down{
+		right: 3%;
+		transition: .2s;
+	}
+}
+@media (max-width: 1460px){
+	section{
+		padding: 0 12%;
+		transition: .2s;
+	}
+}
+@media (max-width: 1340px){
+	.info-text h1{
+		font-size: 15px;
+		margin: 0 0 30px;
+	}
+	.info-text h5{
+		margin-bottom: 25px;
+	}
+}
+@media (max-width: 1195px){
+	section{
+		padding: 0 3%;
+		transition: .2s;
+	}
+	.info-text {
+		padding-top: 115px;
+	}
+	.info{
+		height: 100%;
+		gap: 1rem;
+		grid-template-columns: 1fr;
+	}
+	.scroll-down{
+		display:none;
+	}
+}
+@media (max-width: 990px){
+#menu-icon{
+	display: block;
+}
+.navlist{
+	position:absolute;
+	top:100%;
+	right: -100%;
+	width: 180px;
+	height: 20hv;
+	background: #0b2e67;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 50px 20px;
+	transition: all .55s ease;
+}
+.navlist a{
+	display: block;
+	margin: 7px 0;
+	margin-left: 0;
+}
+
+.navlist a:hover{
+	transition: 0.3s linear;
+	background: #48a1d0;
+	border: 5px;
+	height: 5vh;
+	width: 100%;
+	border-radius: 20px;
+	padding: 3px;
+}
+.navlist.open{
+	right: 0;
+}
+}
+/*@media (max-width: 680px){
+
+}*/
