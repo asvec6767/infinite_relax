@@ -35,7 +35,7 @@
         for( let i = 0; i < 10; i++ ) {
             document.write('<div class="card"> <img src="img/'+folder+'/' + i%7 + '.jpg" alt="img' + i%7 + '"/>');
 			document.write('<div class= "card-content" ><h3 class="card-name">'+names[i%7]+'</h3>'+'<br>');
-			document.write('<h6 class="card-text">'+textes[i%7]+'</h6>'+"</div></div>");
+			document.write('<a href="ad.php" >здесь могла быть ваша реклама</a> <br><h6 class="card-text">'+textes[i%7]+'</h6>'+"</div></div>");
 		}
      </script>
           <!-- </div>-->
@@ -57,7 +57,7 @@
                 if(y >= contentHeight)
                 {for( let i = 0; i < 10; i++ ) {
                     //загружаем новое содержимое в элемент
-                    block.innerHTML = block.innerHTML + '<div class="card"> <img src="img/'+folder+'/' + i%7 + '.jpg" alt="img' + i%7 + '"/>'+'<div class= "card-content" ><h3 class="card-name">'+names[i%7]+'</h3>'+'<br>'+'<h6 class="card-text">'+textes[i%7]+'</h6>'+"</div></div>";
+                    block.innerHTML = block.innerHTML + '<div class="card"> <img src="img/'+folder+'/' + i%7 + '.jpg" alt="img' + i%7 + '"/>'+'<div class= "card-content" ><h3 class="card-name">'+names[i%7]+'</h3>'+'<br>'+'<a href="ad.php" >здесь могла быть ваша реклама</a> <br><h6 class="card-text">'+textes[i%7]+'</h6>'+"</div></div>";
                     //block.innerHTML = block.innerHTML + names[i%7]+'<br>';
 					//block.innerHTML = block.innerHTML + textes[i%7]+"</div>";
 					}
